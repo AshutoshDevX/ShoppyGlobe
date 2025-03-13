@@ -21,7 +21,7 @@ ShoppyGlobe is a 🛒 fully functional e-commerce web application built using **
 
 ## 📷 Screenshots
 
-![Homepage Screenshot](https://your-screenshot-link.com/homepage.png)
+![Browse Page Screenshot](https://github.com/AshutoshDevX/ShoppyGlobe/blob/main/src/assets/screenshots/browseproducts.png)
 ![Cart Page Screenshot](https://your-screenshot-link.com/cart.png)
 
 ## 🚀 Installation
