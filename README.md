@@ -58,7 +58,7 @@ ShoppyGlobe is a 🛒 fully functional e-commerce web application built using **
 
 
 ## 📜 License
-
+[MIT License](LICENSE)
 
 
 
