@@ -1,8 +1,9 @@
 import React from 'react'
-import {FaStar} from 'react-icons/fa'
+import {FaStar,FaStarHalf} from 'react-icons/fa'
 import { addToCart } from '../redux/cartSlice'
 import { useDispatch,useSelector } from 'react-redux'
 import { Link } from 'react-router'
+
 
 const ProductCard = ({product}) => {
     const dispatch = useDispatch();
@@ -26,13 +27,13 @@ const ProductCard = ({product}) => {
           
         </div>
         <div className='flex items-center mt-2'>
-            {
-                product.rating>4.5&&<FaStar className='text-yellow-500'/>
-            }
             <FaStar className='text-yellow-500'/>
             <FaStar className='text-yellow-500'/>
             <FaStar className='text-yellow-500'/>   
             <FaStar className='text-yellow-500'/>
+            {
+                product.rating>4.5&&<FaStarHalf className='text-yellow-500'/>
+            }
         </div>
         <div 
           className='absolute bottom-4 right-2 flex items-center justify-center w-8 h-8 bg-blue-600

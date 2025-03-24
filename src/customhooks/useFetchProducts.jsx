@@ -11,7 +11,7 @@ const useFetchProducts = () => {
         const fetchD = await fetch('https://dummyjson.com/products');
         const realData = await fetchD.json();
         const data = realData.products
-
+        console.log(data)
         dispatch(setProducts(data));
       } catch (err) {
         setError(err.message);
