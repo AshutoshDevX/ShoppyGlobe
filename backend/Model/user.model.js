@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-mongoose.connect("mongodb+srv://admin:Ashutosh123@cluster1.27bkq.mongodb.net/e-commerce");
+mongoose.connect("mongodb+srv://admin:<Password>@cluster1.27bkq.mongodb.net/e-commerce");
 
 
 const user = mongoose.Schema({
