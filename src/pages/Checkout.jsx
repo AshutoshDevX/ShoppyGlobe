@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
-import { useSelector } from 'react-redux'
+import { useSelector,useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router'
 
 const Checkout = ({setOrder}) => {
     const [billingToggle, setBillingToggle] = useState(true)
     const [shippingToggle, setShippingToggle] = useState(false)
     const [paymentToggle, setPaymentToggle] = useState(false)
-
+    const dispatch = useDispatch();
     const [paymentMethod, setPaymentMethod] = useState("cod")
     const [shippingInfo,setShippingInfo] = useState({
         name:'',
@@ -15,6 +15,8 @@ const Checkout = ({setOrder}) => {
         city: '',
         zip: ''
     })
+
+   
 
 
     const cart = useSelector(state=>state.cart)
